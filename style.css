@@ -1,0 +1,72 @@
+/* Used the body tag to select everything inside of the page and apply changes all at once */
+body{
+    background-color: rgb(129, 133, 138);
+    text-align: center;
+}
+/* Used this class attribute to be able to select all of the children underneath this div and place them inside of a grid */
+.container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    height:600px;
+    
+}
+/* Class attribute used to change all three elements in nav bar */
+.bar{
+border: solid 8px pink;
+font-size: large;
+padding: 20px;
+font-weight: bolder;
+font-size: 29px;
+color: purple;
+
+}
+/* ID attribute for about me link to change this element alone*/
+#me{
+    grid-column:2/3 ;
+    grid-row: 1;
+    border-right: none;
+}
+/* ID attribute for projects link to change this element alone*/
+#projects{
+    grid-column:3/4 ;
+    grid-row: 1;
+    border-left: none;
+    border-right: none;
+}
+/* ID attribute for contact link to change this element alone*/
+#contact{
+    grid-column:4/5 ;
+    grid-row: 1;
+    border-left: none;
+    
+    
+}
+
+/* called section by name because it is the only element with this tag and is a child of the container div */
+section{
+    grid-column: 3/4;
+    grid-row: 3;
+    border: solid 20px pink;
+    padding: 40px;
+    font-size: 50px;
+    margin-top: 110px;
+    color: purple;
+}
+/* called footer by name because it is the only element with this tag and is a child of the container div */
+footer{
+    grid-column: 3/4;
+    grid-row: 5;
+    padding-top: 30%;
+    
+    
+}
+/* called button by name to change it and doesnt matter that it is not a child of the grid because I am not doing anything with its positioning */
+button{
+    background-color: purple;
+    border: solid purple;
+    font-weight: bold;
+    padding: 10px;
+    color: pink;
+    font-size: large;
+}
